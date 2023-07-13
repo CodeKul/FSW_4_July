@@ -1,0 +1,32 @@
+Package create :
+    npm init
+
+Module Install
+    npm i  packageName
+    npm install packageName
+
+Uninstall :
+    npm uninstall packageName
+
+Update :
+    npm update packageName
+
+-g -> Global 
+
+OS - Operation System Configu
+URL -> URL Configu
+FS -> File System -> Create, Read, Append
+    -> UTF-8 Unicode Transformation Format
+
+body-parser :
+    .. npm i body-parser
+       .. json();
+       .. urlencoded();
+
+Nodemon :
+    .. npm i nodemon
+    .. package.json
+        .. "scripts": {
+                "test": "echo \"Error: no test specified\" && exit 1",
+                "strt":"nodemon express.js"
+            },
