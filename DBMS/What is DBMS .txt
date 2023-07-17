@@ -12,3 +12,34 @@
 
 > Documents :
 ... Its a entry of your data
+
+
+------------------------------------------------------------------------------------
+Show all Databases :
+> show dbs/databases
+
+show current db :
+> db
+
+create or switch db :
+> use dbName
+
+drop db:
+> db.dropDatabase()
+
+create collection : 
+> db.createCollection('collectionName')
+
+Show collections :
+> show collections
+
+Insert Row: 
+> db.CollectionName.insertOne({.....})
+> db.CollectionName.insertMany({.....})
+
+Get all Data :
+> db.CollectionName.find()
+> db.CollectionName.findOne({...})
+
+to remove :
+> db.collectionName.remove({...})
