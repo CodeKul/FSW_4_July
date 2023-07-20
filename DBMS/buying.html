@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+</head>
+<body>
+    <h1>Buying Page</h1>
+    <form action="/buy" method="post">
+        <lable>Name : </lable>
+        <input type="text" name="namee" />
+        <lable>Address : </lable>
+        <input type="text" name="add" />
+        <lable>Pin Code : </lable>
+        <input type="number" name="pin" minlength="6" maxlength="6" />
+        <lable>PayMent Method : </lable>
+        <!-- <input type="text" name="pm" /> -->
+        <select>
+            <option value="upi">UPI</option>
+            <option value="cod">COD</option>
+            <option value="nb" selected>Net Banking</option>
+        </select>
+        <input type="submit" />
+    </form>
+</body>
+</html>
