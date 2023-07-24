@@ -98,6 +98,13 @@ app.post('/buy',(req,res)=>{
             res.json({err:err});
         }
     );
+});
+
+app.get('/api',async(req,res)=>{
+    var api=await fetch('https://api.adviceslip.com/advice');
+    var d=await api.json()
+    // console.log(d);
+    res.send(d.slip.advice);
 })
 
 app.listen(8087,()=>{console.log('http://localhost:8087/')});
