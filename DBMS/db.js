@@ -1,3 +1,4 @@
+// Install mongoose
 const mongo=require('mongoose');
 
 // Connect Mongoose
@@ -13,6 +14,7 @@ var data={
     Age:35,
     Locations:['Pune','Mumbai']
 }
+
 // Data insert
 cl.insertOne(data,()=>{
     console.log('added');

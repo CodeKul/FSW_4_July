@@ -2,6 +2,13 @@ const bodyParser = require('body-parser');
 const express=require('express');
 const app=express();
 
+// For Static file -> set Middleware
+app.use(express.static(__dirname,'static'));
+
+//View setup
+app.set('views',path.join(__dirname,'views'));
+app.set('view engine','ejs'); 
+
 // Use json
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
@@ -18,7 +25,7 @@ app.get('/about',(req,res)=>{
 
 app.get('/help',(req,res)=>{
     res.send('<h1>Help Page</h1>');
-})
+});
 
 // Route Parameters
 app.get('/student/login/newone/:id/:name',(req,res)=>{
@@ -44,7 +51,7 @@ app.post('/uform',(req,res)=>{
     // res.send('API Called');
     const uname=req.body.uname;
     const passw=req.body.passw;
-    res.status(404).send(`User Name is ${uname} And Your Password is ${passw}`);
+    res.status(200).send(`User Name is ${uname} And Your Password is ${passw}`);
 });
 
 // 404 page return

@@ -42,4 +42,4 @@ Get all Data :
 > db.CollectionName.findOne({...})
 
 to remove :
-> db.collectionName.remove({...})
+> db.collectionName.deleteOne({...})
